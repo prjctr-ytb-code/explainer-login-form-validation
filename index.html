@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login form validation</title>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+<form class="form">
+  <label>
+    Your email
+    <input
+        class="u-full-width"
+        id="email"
+        name="email"
+        placeholder="example@mailbox.com"
+        required
+        type="email"
+        autocomplete="email"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+    >
+  </label>
+  <label>
+    Your password
+    <input
+        autocomplete="current-password"
+        class="u-full-width"
+        id="password"
+        name="password"
+        required
+        type="password"
+    >
+    <span class="show-password-text-toggle"></span>
+  </label>
+  <button class="button-primary" type="submit">Sign in</button>
+</form>
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+label[for="password"] {
+    position: relative;
+}
+
+.show-password-text-toggle {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.show-password-text-toggle::after {
+    display: inline-flex;
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url('./svg/eye-show.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.show-password-text-toggle.hide-password-text::after {
+    background-image: url('./svg/eye-off.svg');
+}
+
+input:valid {
+    border-color: palegreen;
+}
+
+input:invalid {
+    border-color: lightpink;
+}
